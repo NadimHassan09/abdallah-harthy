@@ -401,7 +401,7 @@
 
         /* Features Section */
         .features {
-            background-color: var(--color-white);
+            background-color: var(--color-light-gray);
             padding: 4rem 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -467,7 +467,7 @@
 
         /* Services Section */
         .services {
-            background-color: var(--color-light-gray);
+            background-color: var(--color-white);
             padding: 4rem 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -525,7 +525,7 @@
 
         /* Contact Section */
         .contact {
-            background-color: var(--color-light-gray);
+            background-color: var(--color-white);
             padding: 4rem 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -647,6 +647,26 @@
             background-color: #A8842F;
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(184, 148, 58, 0.3);
+        }
+
+        /* Policy Content Section */
+        .policy-content {
+            background-color: var(--color-white);
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .policy-content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .policy-content-wrapper p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--color-dark-gray);
+            text-align: justify;
         }
 
         /* Footer */
@@ -835,6 +855,14 @@
                 width: 60px;
                 height: 60px;
                 font-size: 2rem;
+            }
+
+            .policy-content {
+                padding: 2rem 1rem;
+            }
+
+            .policy-content-wrapper p {
+                font-size: 1rem;
             }
         }
 
