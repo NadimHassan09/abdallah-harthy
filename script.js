@@ -87,19 +87,19 @@ function handleNavigationClick(e) {
     const anchor = e.target.closest('a[href^="#"]');
     if (!anchor) return;
     
-    e.preventDefault();
+                e.preventDefault();
     // Restore original content if we're on a policy page
     if (isPolicyPage()) {
         restoreOriginalContent();
         // Wait for content to restore before scrolling
         setTimeout(() => {
             const target = document.querySelector(anchor.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
         }, 100);
     } else {
         const target = document.querySelector(anchor.getAttribute('href'));
