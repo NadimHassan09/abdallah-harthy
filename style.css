@@ -278,6 +278,128 @@
             color: var(--color-deep-green);
         }
 
+        /* Official Registrations Section */
+        .official-registrations {
+            background-color: var(--color-light-gray);
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .official-registrations-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .official-registrations-intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-dark-gray);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .official-registrations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .official-registration-card {
+            background-color: var(--color-white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .official-registration-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .official-registration-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Specific icon sizing for certain organizations */
+        .official-registrations-grid .official-registration-card:nth-child(3) .official-registration-icon,
+        .official-registrations-grid .official-registration-card:nth-child(4) .official-registration-icon,
+        .official-registrations-grid .official-registration-card:nth-child(6) .official-registration-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .official-registrations-grid .official-registration-card:nth-child(3) .official-registration-icon img,
+        .official-registrations-grid .official-registration-card:nth-child(4) .official-registration-icon img,
+        .official-registrations-grid .official-registration-card:nth-child(6) .official-registration-icon img {
+            max-width: 95%;
+            max-height: 95%;
+        }
+
+        .official-registration-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-deep-green);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            transition: color 0.3s ease;
+        }
+
+        .official-registration-card:hover {
+            border-color: var(--color-soft-gold);
+            box-shadow: 0 12px 24px rgba(11, 95, 75, 0.1);
+            transform: translateY(-8px);
+        }
+
+        .official-registration-card:hover h4 {
+            color: var(--color-soft-gold);
+        }
+
+        .official-registration-card .registration-number {
+            font-size: 0.95rem;
+            color: var(--color-dark-gray);
+            margin: 0;
+        }
+
+        .official-registration-card .registration-label {
+            font-weight: 700;
+            color: var(--color-deep-green);
+            transition: color 0.3s ease;
+        }
+
+        .official-registration-card:hover .registration-label {
+            color: var(--color-soft-gold);
+        }
+
+        .official-registration-card .registration-value {
+            font-weight: 400;
+            color: var(--color-dark-gray);
+            direction: ltr;
+            display: inline-block;
+            unicode-bidi: embed;
+        }
+
+        .official-registrations-footer {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-dark-gray);
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+
         /* Stats Section */
         .stats {
             background-color: var(--color-white);
@@ -943,6 +1065,11 @@
                 font-size: 1rem;
             }
 
+            .official-registrations-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
             .stats {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
@@ -1012,6 +1139,10 @@
 
             .section-title {
                 font-size: 1.8rem;
+            }
+
+            .official-registrations-grid {
+                grid-template-columns: 1fr;
             }
 
             .stats {
